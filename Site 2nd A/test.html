@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="lun., 09 déc. 2019 13:31:24 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <meta charset="utf-8" />
+        <link rel="icon" type="image/jpg" href="logo_2.jpg">
+        <link rel="stylesheet" type="text/css" href="test.css">
+    
+<title>Mon Panier</title>
+
+    Ce que vous recherchez : <br>
+    <input type="search" name="search">
+
+
+    <style type="text/css">
+
+    #minicart{
+        display:none;
+    }
+    #ShowCart:hover + #minicart{
+        display:block;
+    }
+
+    </style><br>
+
+
+<a href="viewCart" id="ShowCart"><fmt:message key='cart'/> 
+        <img style="width: 50px; height: 50px;" alt="" src="logo_2.jpg" align="top" vspace="8"></a>
+
+        <table id="minicart">
+    <tr>
+        <td>Image 1</td>
+        <td>Item 1</td>
+    </tr>
+    <tr>
+        <td>Iamge 2</td>
+        <td>Item 2</td>
+    </tr>
+
+    <tr>
+        <td><a href="viewCart">View Cart (${cart.numberOfItems})</a></td>
+    </tr>
+
+</table>
+
+
+
+<div class="dropdown">
+  <button class="dropbtn">Panier</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
